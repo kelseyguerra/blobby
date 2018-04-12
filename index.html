@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <title>2D Game-Maker Platform</title>
+  </head>
+  <body>
+    <h1 class="text-center">Princess Blobby Grand Adventure</h1>
+    <table id="gameboard" class="text-center">
+      <tr class="y0">
+        <td class="x0"></td>
+        <td class="x1"></td>
+        <td class="x2"></td>
+        <td class="x3"></td>
+        <td class="x4"></td>
+        <td class="x5"></td>
+      </tr>
+      <tr class="y1">
+        <td class="x0"></td>
+        <td class="x1"></td>
+        <td class="x2"></td>
+        <td class="x3"></td>
+        <td class="x4"></td>
+        <td class="x5"></td>
+      </tr>
+      <tr class="y2">
+        <td class="x0"></td>
+        <td class="x1"></td>
+        <td class="x2 barrier sand"></td>
+        <td class="x3 barrier sand"></td>
+        <td class="x4"></td>
+        <td class="x5"></td>
+      </tr>
+      <tr class="y3">
+        <td class="x0"></td>
+        <td class="x1 barrier sand"></td>
+        <td class="x2 barrier sand"></td>
+        <td class="x3"></td>
+        <td class="x4"></td>
+        <td class="x5"></td>
+      </tr>
+      <tr class="y4">
+        <td class="x0"></td>
+        <td class="x1"></td>
+        <td class="x2"></td>
+        <td class="x3"></td>
+        <td class="x4"></td>
+        <td class="x5"></td>
+      </tr>
+      <tr class="y5">
+        <td class="x0"></td>
+        <td class="x1"></td>
+        <td class="x2"></td>
+        <td class="x3"></td>
+        <td class="x4"></td>
+        <td class="x5 castle"></td>
+      </tr>
+    </table>
+    <div id="navigation" class="text-center">
+      <div id="status">
+        <h3>Blob Power!</h3>
+        <div id="meter">
+        </div>
+      </div>
+      <div id="controls">
+        <div class="row">
+          <div class="col-xs-4">
+          </div>
+          <div class="col-xs-4">
+            <button id="up" class="btn btn-info movement" type="button"><span class="glyphicon glyphicon-arrow-up"></span><span class="display-none">W</span></button>
+          </div>
+          <div class="col-xs-4">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4">
+            <button id="left" class="btn btn-info movement" type="button"><span class="glyphicon glyphicon-arrow-left"></span><span class="display-none">A</span></button>
+          </div>
+          <div class="col-xs-4">
+            <button id="down" class="btn btn-info movement" type="button"><span class="glyphicon glyphicon-arrow-down"></span><span class="display-none">S</span></button>
+          </div>
+          <div class="col-xs-4">
+            <button id="right" class="btn btn-info movement" type="button"><span class="glyphicon glyphicon-arrow-right"></span><span class="display-none">D</span></button>
+          </div>
+        </div>
+        <button class="btn btn-default toggle" type="button"><span>Keyboard Controls</span><span class="display-none">Arrow Buttons</span></button>
+      </div>
+    </div>
+    <div id="game-over" class="text-center display-none">
+      <h4></h4>
+      <button id="restart" class="btn btn-warning" type="button">Try Again</button>
+    </div>
+  </body>
+</html>
